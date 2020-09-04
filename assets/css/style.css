@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    color: #8d8f92;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Start Header Area Here*/
+
+.header-area {
+    background: #1D2127;
+    width: 100%;
+    height: 80px;
+    transition: all 0.3s ease-in-out;
+    animation-name: slide2;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform: translate(0, 0px)
+}
+.red {
+    background: red;
+}
+.header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    animation-name: slide;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform: translate(0, -20px)
+}
+@keyframes slide {
+    0% {
+      transform: translate(0, -20px);
+      opacity:.1
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity:1
+    }
+  }
+@keyframes slide2 {    
+    0% {
+      transform: translate(0, 20px);
+      opacity:.2
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity:1
+      }
+  }
+.logo {
+    margin-top: 26px;
+}
+.mainmenu {
+    position: sticky;
+    top: 50;
+}
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.mainmenu li {
+    display: inline-block;
+}
+
+.mainmenu li a {
+    display: inline-block;
+    color: #a4aead;
+    padding: 10px;
+    margin-top: 18px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.mainmenu li a:hover {
+    border: 2px solid #24B7A4;
+    border-radius: 5px;
+    color: #24B7A4;
+}
+/*End Header Area Here*/
+
+/*Start Slider Area Here*/
+.slide-item { 
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .slide-item {
+        min-height: 280px;
+        background-position: center;
+        background-size: cover;
+}}
+@media screen and (min-width: 40em) {
+    .slide-item{ height: 360px; min-height: 360px;}}
+@media screen and (min-width: 64em) {
+    .slide-item{ height: 600px; min-height: 600px;}}
+
+.slider-content h1 {
+        color: #fff;
+        font-size: 48px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 33px;
+        padding-top: 226px;
+}
+    
+.slider-content p {
+        font-size: 22px;
+        margin-bottom: 35px;
+        color: #22C8E5;
+}    
+/*End Slider Area Here*/
+
+/*Start Modest Area Here*/
+.modest-area {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.modest h1 {
+    color: #2B3139;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.modest p {
+    margin-top: 60px;
+}
+.para p {
+    margin-top: 40px;
+}
+.s-icon {
+    margin-top: 60px;
+}
+.s-icon a {
+    background-color: #9ca4a9;
+    padding: 16px;
+    color: #fff;
+}
+.s-icon a:hover {
+    opacity: 0.7;
+    color: #3333ff;
+}
+.s-icon ul li:hover.fa-facebook-f {
+    border: 5px solid  #3b5998;
+    box-shadow: 0 0 15px  #3b5998;
+    transition: all 0.5s ease;
+}
+.s-icon ul li:hover .fa-facebook-f {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.s-icon .fa-facebook-f {
+    padding: 6px;
+}
+.s-icon .fa-twitter {
+    padding: 2px;
+}
+.s-icon .fa-google {
+    padding: 3px;
+}
+.s-icon .fa-dribbble {
+    padding: 2px;
+}
+.math {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.math h4 {
+    background-color: #24B7A4;
+    padding: 16px;
+    color: #fff;
+}
+.math h4:nth-child(2) {
+    margin-top: 80px;
+}
+.math h4:nth-child(3) {
+    margin-top: 75px;
+}
+.side-content {
+    margin-top: 118px;
+    display: flex;
+}
+.side-content h4 {
+    color: #292f36;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.side-content-2 {
+    display: flex;
+}
+.side-content p {
+    color: #8d8f92;
+    font-size: 16px;
+}
+.side-content-2 h4 {    
+    color: #292f36;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.side-content-2 p {
+    color: #8d8f92;
+    font-size: 16px;
+}
+.side-content-3 {
+    display: flex;
+}
+.side-content-3 h4 {    
+    color: #292f36;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.side-content-3 p {
+    color: #8d8f92;
+    font-size: 16px;
+}
+/*End Modest Area Here*/
+
+/*Start Team Area Here*/
+.team-area {
+    margin-bottom: 100px;
+}
+.team-area h2 {
+    color: #2B3139;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+}
+.single-img {
+    background-color: #e1e6ea;
+    width: 100%;
+    height: 100%;
+}
+.card-body h6 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.card-text {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: -10px;
+}
+/*Start Team Area Here*/
+
+/*Start Lovely Area Here*/
+.lovely-area {
+    background-color: #3a454d;
+    padding-bottom: 80px;
+}
+.lovely-area h2 {
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #fff;
+    padding-top: 85px;
+}
+.lovely-img {
+    width: 360px;
+    height: 265px;
+    padding: 15px 15px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+}
+.btn-2 {
+    margin-top: 60px;
+}
+.btn-2 a {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/*End Lovely Area Here*/
+
+/*Start Promo Area Here*/
+.promo-area {
+    margin-top: 80px;
+    padding-bottom: 140px;
+}
+.promo-area h2 {
+    color: #292f36;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+}
+.promo img {
+    margin-bottom: 35px;
+}
+.promo h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.naw {
+    margin-bottom: 94px;
+}
+/*End Promo Area Here*/
+
+/*Start Features Area Here*/
+.features-area {
+    background-color: #3D484F;
+    padding-bottom: 100px;
+}
+.features-area h2 {
+    padding-top: 90px;
+    color: #fff;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.features img {
+    transition: all 0.5s ease-in-out;
+}
+.features figure {
+    overflow: hidden;
+}
+.features:hover img {
+    transform: scale(1.7);
+    filter: brightness(.5)
+}
+.features:hover h6 {
+    color: #16A085;
+}
+.features:hover p {
+    color: #fff;
+}
+.features h6 {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out 0s;
+}
+.features p {
+    color: #dcdfe1;
+}
+/*End Features Area Here*/
+
+/*Start Google Map Area Here*/
+.map-area {
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+.map-area h2 {
+    color: #292f36;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.map p {
+    margin-bottom: 60px;
+}
+.contact h5 {
+    color: #292f36;
+    text-transform: uppercase;
+}
+/*End Google Map Area Here*/
+
+/*Contact Form Area Start*/
+.contact-area {
+    margin-bottom: 100px;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: -25vh;
+}
+.btn_3 {
+    background-color: #23b7a4;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.contact-form .btn-primary {
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
+}
+/*Contact Form Area End*/
+
+/*Start Footer Area*/
+.footer-area {
+    background-color: #3a454d;
+}
+.copyright {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.f-s-icon {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: right;
+}
+.f-s-icon a {
+    color: #fff;
+}
+.f-s-icon i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+/*End Footer Area*/
